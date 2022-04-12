@@ -12,7 +12,7 @@ def check_and_convert(ip_add):
 def check_port(t_ip,port):
     try:
         sock = socket.socket()
-        sock.settimeout(0.9)
+        sock.settimeout(0.5)
         sock.connect((t_ip,port))
         print(f"\t[+] Port {port} is open")
     except:
