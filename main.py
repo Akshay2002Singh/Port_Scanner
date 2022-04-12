@@ -16,8 +16,8 @@ def check_port(t_ip,port):
         sock.connect((t_ip,port))
         print(f"\t[+] Port {port} is open")
     except:
-        print(f"\t[+] Port {port} is closed")
-        # pass
+        # print(f"\t[+] Port {port} is closed")
+        pass
 
 def scan(temp_ip):
     real_ip = check_and_convert(temp_ip)
