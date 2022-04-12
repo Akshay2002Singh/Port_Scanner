@@ -25,6 +25,8 @@ def scan(temp_ip):
         check_port(real_ip,port)
 
 if __name__=="__main__":
+    head = fontstyle.apply("\nELITE PORT SCANNER","bold/Italic/CYAN")
+    print(head)
     targets = input('\n[+] Enter Target/s To Scan (split multiple targets with ,) : ')
     if ',' in targets:
         for ip in targets.split(','):
